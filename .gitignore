@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+
+# Variabili d'ambiente e segreti: non vanno mai pubblicati
+.env
+.env.*
+!.env.example

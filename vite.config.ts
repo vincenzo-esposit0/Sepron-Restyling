@@ -3,8 +3,10 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
 
-export default defineConfig(() => {
+export default defineConfig(({command}) => {
   return {
+    // GitHub Pages serve il sito sotto /Sepron-Restyling/
+    base: command === 'build' ? '/Sepron-Restyling/' : '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
