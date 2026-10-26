@@ -1,0 +1,6 @@
+{
+  "name": "SEPRON",
+  "description": "Portatale B2B per nutrizione, salute animale e biosicurezza veterinaria e zootecnica. Soluzioni professionali ed eccellenti per allevamenti del Centro-Sud Italia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
