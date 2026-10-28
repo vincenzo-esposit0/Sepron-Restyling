@@ -192,9 +192,23 @@ export default function Footer({ language, navigate }: FooterProps) {
         </div>
 
         {/* Lower Banner */}
-        <div id="footer-bottom-bar" className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-[#FAF9F6]/75">
-          <div id="footer-copyright">
-            © {currentYear} SEPRON S.r.l. - {language === 'it' ? 'Tutti i diritti riservati.' : 'All rights reserved.'}
+        <div id="footer-bottom-bar" className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#FAF9F6]/75">
+          <div id="footer-copyright" className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
+            <span>© {currentYear} SEPRON S.r.l. - {language === 'it' ? 'Tutti i diritti riservati.' : 'All rights reserved.'}</span>
+            <span className="hidden sm:inline text-[#7D736A]">•</span>
+            <span id="developer-signature" className="inline-flex items-center gap-1.5 text-[#C4BCB3]">
+              <span>Realizzato da</span>
+              <a
+                href="https://vincenzo-esposit0.github.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-accent-wheat hover:text-white transition-all underline decoration-accent-wheat/60 hover:decoration-white inline-flex items-center gap-1 group"
+                title="Vincenzo Esposito - Web Developer"
+              >
+                <span>Vincenzo Esposito</span>
+                <span className="inline-block transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 text-[10px]" aria-hidden="true">↗</span>
+              </a>
+            </span>
           </div>
           <div id="footer-meta-links" className="flex items-center gap-6">
             <span className="hover:text-accent-wheat cursor-pointer">{language === 'it' ? 'Informativa Privacy e Cookies' : 'Privacy & Cookies Policy'}</span>
